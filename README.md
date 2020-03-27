@@ -25,6 +25,10 @@ npm run lint
 - axios
 - Element-UI组件库
 
+### 体验
+
+- http://yyblog.top/PC-ONEMUSIC/dist/index.html#/discovery
+
 
 ## 项目初始化
 1. 按需引入 Element-UI 组件
@@ -82,3 +86,12 @@ npm run lint
   - SearchMv.vue    搜索MV组件
 
 ### 本项目有些页面布局有一些其实是可以复用的但是怕组件过多自己搞不清就没有去重构了。谅解
+
+### 页面效果展示
+
+![GPPrtO.png](https://s1.ax1x.com/2020/03/27/GPPrtO.png)
+![GPPc1H.png](https://s1.ax1x.com/2020/03/27/GPPc1H.png)
+![GPP076.png](https://s1.ax1x.com/2020/03/27/GPP076.png)
+![GPPw0x.png](https://s1.ax1x.com/2020/03/27/GPPw0x.png)
+![GPP69e.png](https://s1.ax1x.com/2020/03/27/GPP69e.png)
+![GPP2jA.png](https://s1.ax1x.com/2020/03/27/GPP2jA.png)
