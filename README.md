@@ -29,6 +29,8 @@ npm run lint
 
 - http://yyblog.top/PC-ONEMUSIC/dist/index.html#/discovery
 
+- 最好使用**谷歌浏览器**访问因为没有去调试其他浏览器的样式。 谅解
+
 
 ## 项目初始化
 1. 按需引入 Element-UI 组件
