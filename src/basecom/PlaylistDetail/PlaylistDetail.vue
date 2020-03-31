@@ -49,7 +49,7 @@
             <template slot-scope="scope">
               <img
                 class="music_img"
-                :src="scope.row.al.picUrl"
+                v-lazy="scope.row.al.picUrl"
                 height="70"
                 width="70"
                 @dblclick="_getNewmusicUrl(scope.row.id)"

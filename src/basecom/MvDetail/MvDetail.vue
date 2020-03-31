@@ -14,7 +14,7 @@
       <div class="info">
         <div class="info_singer">
           <div class="avatar_wrap">
-            <img :src="MvDetail.singerImage">
+            <img v-lazy="MvDetail.singerImage">
           </div>
           <span>{{MvDetail.singerName}}</span>
         </div>
@@ -39,7 +39,7 @@
         >
           <div class="item">
             <div class="img_wrap">
-              <img :src="item.cover">
+              <img v-lazy="item.cover">
             </div>
             <div class="info_wrap">
               <div class="name">{{item.name}}</div>

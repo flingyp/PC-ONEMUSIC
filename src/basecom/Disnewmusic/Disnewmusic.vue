@@ -11,7 +11,7 @@
           class="img_wrap"
           @click="getMusicUrl(item.id)"
         >
-          <img :src="item.picUrl">
+          <img v-lazy="item.picUrl">
           <span class="iconfont">&#xe6df;</span>
         </div>
         <div class="song_wrap">

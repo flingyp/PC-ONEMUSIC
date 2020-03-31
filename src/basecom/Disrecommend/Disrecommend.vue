@@ -13,7 +13,7 @@
             <div class="desc-wrap">
               <span class="desc">{{item.copywriter}}</span>
             </div>
-            <img :src="item.picUrl">
+            <img v-lazy="item.picUrl">
             <span class="iconfont">&#xe6df;</span>
           </div>
           <p class="itemName">{{item.name}}</p>

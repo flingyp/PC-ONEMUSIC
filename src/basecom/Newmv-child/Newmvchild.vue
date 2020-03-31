@@ -52,7 +52,7 @@
             class="mv_img"
             @click="goMvDetail(item.id)"
           >
-            <img :src="item.cover">
+            <img v-lazy="item.cover">
             <div class="mv_num">
               <span class="iconfont">&#xe6df;</span>
               <span>{{item.playCount}}</span>

@@ -7,7 +7,7 @@
       @click="goMvDetail(item.id)"
     >
       <div class="img_wrap">
-        <img :src="item.cover">
+        <img v-lazy="item.cover">
         <span class="iconfont iconfont1">&#xe6df;</span>
         <div class="num_wrap">
           <div class="iconfont iconfont2">&#xe6df;</div>

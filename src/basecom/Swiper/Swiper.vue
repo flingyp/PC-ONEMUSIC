@@ -11,10 +11,7 @@
       class="item"
     >
       <h3 class="medium">
-        <img
-          :src="item.picUrl"
-          alt=""
-        >
+        <img v-lazy="item.imageUrl">
       </h3>
     </el-carousel-item>
 

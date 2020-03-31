@@ -14,7 +14,7 @@
             <div class="desc-wrap">
               <span class="desc">播放量: {{item.playCount}}</span>
             </div>
-            <img :src="item.coverImgUrl">
+            <img v-lazy="item.coverImgUrl">
             <span class="iconfont">&#xe6df;</span>
           </div>
           <p class="itemName">{{item.name}}</p>

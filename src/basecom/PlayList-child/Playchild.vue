@@ -46,7 +46,7 @@
               <div class="desc-wrap">
                 <span class="desc">播放量: {{item.playCount}}</span>
               </div>
-              <img :src="item.coverImgUrl">
+              <img v-lazy="item.coverImgUrl">
               <span class="iconfont">&#xe6df;</span>
             </div>
             <p class="itemName">{{item.description}}</p>
@@ -108,7 +108,7 @@ export default {
       })
     },
     _getPlaylist (tag, pagenum, pagesize) {
-      const url = '/top/playlist'
+      const url = 'http://musicapi.leanapp.cn/top/playlist'
       getPlaylist(url, tag, pagenum, pagesize).then((res) => {
         this.total = res.data.total
         this.playlist = res.data.playlists

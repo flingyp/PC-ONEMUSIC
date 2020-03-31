@@ -27,7 +27,7 @@
         >
           <template slot-scope="scope">
             <img
-              :src="scope.row.album.blurPicUrl"
+              v-lazy="scope.row.album.blurPicUrl"
               min-width="70"
               height="70"
               @click="_getNewmusicUrl(scope.row.id)"
@@ -129,7 +129,7 @@ export default {
       this.type = this.tabBar[index].type
     },
     _getNewMusic (type) {
-      const url = '/top/song'
+      const url = 'http://musicapi.leanapp.cn/top/song'
       getNewMusic(url, type).then((res) => {
         if (res.statusText === 'OK') {
           let data = res.data.data
