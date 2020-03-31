@@ -111,7 +111,7 @@ export default {
   },
   methods: {
     _getMV (area, type, order, limit, offset) {
-      const url = 'https://autumnfish.cn/mv/all'
+      const url = '/mv/all'
       getMV(url, area, type, order, limit, offset).then((res) => {
         if (res.statusText === 'OK') {
           if (!res.data.count) {

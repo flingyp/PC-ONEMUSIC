@@ -88,7 +88,7 @@ export default {
       setMvUrl: 'SET_MV_URL'
     }),
     _getMvUrl (id) {
-      const url = 'https://autumnfish.cn/mv/url'
+      const url = '/mv/url'
       getMvUrl(url, id).then((res) => {
         if (res.statusText === 'OK') {
           const mvUrl = res.data.data.url
@@ -97,13 +97,13 @@ export default {
       })
     },
     _getMvDetail (id) {
-      const url = 'https://autumnfish.cn/mv/detail'
+      const url = '/mv/detail'
       getMvDetail(url, id).then((res) => {
         if (res.statusText === 'OK') {
           const item = res.data.data
           // 获取歌手 id
           const singerId = res.data.data.artists[0].id
-          const singerUrl = 'https://autumnfish.cn/artists'
+          const singerUrl = '/artists'
           getSinger(singerUrl, singerId).then((res) => {
             if (res.statusText === 'OK') {
               const singerImage = res.data.artist.img1v1Url
@@ -116,7 +116,7 @@ export default {
       })
     },
     _getSimiMv (id) {
-      const url = 'https://autumnfish.cn/simi/mv'
+      const url = '/simi/mv'
       getSimiMv(url, id).then((res) => {
         if (res.statusText === 'OK') {
           this.miniMvs = res.data.mvs

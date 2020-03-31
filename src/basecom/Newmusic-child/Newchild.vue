@@ -129,7 +129,7 @@ export default {
       this.type = this.tabBar[index].type
     },
     _getNewMusic (type) {
-      const url = 'https://autumnfish.cn/top/song'
+      const url = '/top/song'
       getNewMusic(url, type).then((res) => {
         if (res.statusText === 'OK') {
           let data = res.data.data

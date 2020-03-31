@@ -11,7 +11,7 @@ import axios from 'axios'
 Vue.config.productionTip = false
 
 Vue.prototype.$axios = axios
-axios.defaults.baseURL = 'http://musicapi.leanapp.cn'
+axios.defaults.baseURL = 'https://autumnfish.cn'
 
 new Vue({
   router,

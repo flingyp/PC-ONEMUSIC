@@ -96,8 +96,7 @@ export default {
     // 新音乐歌曲的 url
     getMusicUrl (id) {
       // 通过 id 值去请求歌曲的URL
-      // 这里调用另一个网站的接口 原本接口好像没了
-      const url = 'https://autumnfish.cn/song/url'
+      const url = '/song/url'
       getNewmusicUrl(url, id).then((res) => {
         if (res.statusText === 'OK') {
           const url = res.data.data[0].url
