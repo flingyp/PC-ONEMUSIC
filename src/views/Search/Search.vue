@@ -85,7 +85,7 @@ export default {
       setCurrentUrl: 'SET_CURRENT_URL'
     }),
     _getSearchData (keywords, limit, offset, type) {
-      const url = 'http://musicapi.leanapp.cn/search'
+      const url = '/search'
       // 调用 歌曲
       if (this.type === 1) {
         getSearchData(url, keywords, limit, offset, type).then((res) => {
